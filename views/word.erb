@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h1 class = "text-center"><%=@word.word%></h1>
+</div>
+<h3 class="text-center">Here are all the definitions for this word</h3>
+  <ul>
+    <% @word.definitions().each do |defintion| %>
+      <li> <%= defintion.content() %> </li>
+    <% end %>
+  </ul>
+
+<div class="jumbotron text-center">
+  <button class = "btn"><a href="/words/<%=@word.id%>/definitions/new">Add a new definition</a></button>
+  <button class="btn"><a href="/">Return to Main Page</a></button>
+</div>

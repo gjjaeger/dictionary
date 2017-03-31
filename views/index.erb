@@ -1,0 +1,17 @@
+<div class = "jumbotron">
+  <h1 class = "text-center">Dictionary</h1>
+</div>
+  <ul class="list-group">
+    <% @words.each() do |word| %>
+      <li class="list-group-item"><a href="/words/<%= word.id() %>"><%= word.word() %></a>           <span><% if word.definitions.length>0%><%=word.definitions[0].content%><%end%></span></li>
+    <% end %>
+  </ul>
+
+<h1 class="text-center">Add a word</h1>
+
+
+  <form class="text-center" action="/newword" method="post">
+    <label for="word">Your word:</label>
+    <input id="word" name="word" type="text">
+    <button class = "btn" type="submit">Add word</button>
+  </form>
