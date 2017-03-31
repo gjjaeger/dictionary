@@ -1,7 +1,7 @@
 # DICTIONARY
 Friday march 31st project
 Link to Heroku app:
-https://cryptic-waters-43805.herokuapp.com/
+https://glacial-spire-30967.herokuapp.com/
 
 # DICTIONARY
 
